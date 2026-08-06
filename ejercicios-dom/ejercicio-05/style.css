@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #14141a;
+  color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: #9c9caa;
+  margin-top: 0.4rem;
+}
+
+.album-list {
+  list-style: none;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.album-list li {
+  background-color: #1f1f29;
+  border-left: 4px solid #b3122f;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.album-list li:hover {
+  transform: translateX(6px);
+  background-color: #292937;
+}
