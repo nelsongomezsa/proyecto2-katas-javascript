@@ -1,10 +1,10 @@
-// 2.1 Insertar dinámicamente un div vacío
+// crea un div vacio
 {
   const div = document.createElement('div');
   document.body.appendChild(div);
 }
 
-// 2.2 Insertar dinámicamente un div que contenga una p
+// crea un div con una p dentro
 {
   const div = document.createElement('div');
   const p = document.createElement('p');
@@ -12,7 +12,7 @@
   document.body.appendChild(div);
 }
 
-// 2.3 Insertar dinámicamente un div que contenga 6 p utilizando un loop
+// crea un div con 6 p usando un loop
 {
   const div = document.createElement('div');
   for (let i = 0; i < 6; i++) {
@@ -22,20 +22,20 @@
   document.body.appendChild(div);
 }
 
-// 2.4 Insertar dinámicamente una p con el texto 'Soy dinámico!'
+// crea una p con texto
 {
   const p = document.createElement('p');
   p.textContent = 'Soy dinámico!';
   document.body.appendChild(p);
 }
 
-// 2.5 Insertar en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'
+// cambia el texto del h2
 {
   const h2 = document.querySelector('h2.fn-insert-here');
   h2.textContent = 'Wubba Lubba dub dub';
 }
 
-// 2.6 Crear una lista ul > li con los textos del array apps
+// crea la lista de apps
 {
   const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
   const ul = document.createElement('ul');
@@ -49,23 +49,22 @@
   document.body.appendChild(ul);
 }
 
-// 2.7 Eliminar todos los nodos que tengan la clase .fn-remove-me
+// borra los que tienen la clase fn-remove-me
 {
   const nodesToRemove = document.querySelectorAll('.fn-remove-me');
   nodesToRemove.forEach((node) => node.remove());
 }
 
-// 2.8 Insertar una p con el texto 'Voy en medio!' entre los dos div vacíos
+// mete una p en medio de los dos div
 {
   const divs = document.querySelectorAll('body > div:not(.fn-insert-here)');
   const [firstDiv] = divs;
   const p = document.createElement('p');
   p.textContent = 'Voy en medio!';
-  // No usamos appendChild: insertamos justo después del primer div con insertAdjacentElement
   firstDiv.insertAdjacentElement('afterend', p);
 }
 
-// 2.9 Insertar una p con el texto 'Voy dentro!' dentro de todos los div con la clase .fn-insert-here
+// mete una p dentro de los div fn-insert-here
 {
   const insertHereDivs = document.querySelectorAll('div.fn-insert-here');
   insertHereDivs.forEach((div) => {

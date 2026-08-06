@@ -1,4 +1,4 @@
-// 1.1 Crear dinámicamente una lista ul > li que imprima cada país del array
+// crea la lista de paises
 {
   const countries = ['Japón', 'Nicaragua', 'Suiza', 'Australia', 'Venezuela'];
   const ul = document.createElement('ul');
@@ -12,13 +12,13 @@
   document.body.appendChild(ul);
 }
 
-// 1.2 Eliminar el elemento que tenga la clase .fn-remove-me
+// borra el elemento fn-remove-me
 {
   const toRemove = document.querySelector('.fn-remove-me');
   toRemove.remove();
 }
 
-// 1.3 Crear dinámicamente una lista ul > li dentro del div data-function="printHere"
+// crea la lista de coches dentro del div
 {
   const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola'];
   const printHereDiv = document.querySelector('[data-function="printHere"]');
@@ -33,7 +33,7 @@
   printHereDiv.appendChild(ul);
 }
 
-// 1.4 Crear dinámicamente divs con un h4 (título) y una img
+// crea las tarjetas con titulo e imagen
 const countriesData = [
   { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1' },
   { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2' },
@@ -62,7 +62,7 @@ countriesData.forEach((item) => {
   gallery.appendChild(card);
 });
 
-// 1.5 Botón que elimina el último elemento de la serie de divs
+// boton para borrar el ultimo
 {
   const removeLastBtn = document.createElement('button');
   removeLastBtn.textContent = 'Eliminar último';
@@ -74,7 +74,7 @@ countriesData.forEach((item) => {
   document.body.appendChild(removeLastBtn);
 }
 
-// 1.6 Un botón por cada div que elimine ese mismo elemento
+// boton en cada tarjeta para borrarla
 {
   const galleryItems = document.querySelectorAll('.gallery-item');
   galleryItems.forEach((item) => {

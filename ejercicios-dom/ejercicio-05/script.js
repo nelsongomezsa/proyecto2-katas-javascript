@@ -1,4 +1,4 @@
-// Crear dinámicamente una lista ul > li con los álbumes del array
+// crea la lista de albumes
 const albums = [
   'De Mysteriis Dom Sathanas',
   'Reign of Blood',
