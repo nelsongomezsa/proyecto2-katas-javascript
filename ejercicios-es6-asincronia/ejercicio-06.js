@@ -11,14 +11,14 @@ const exams = [
   { name: 'Keanu Reeves', score: 10 },
 ];
 
-// 6.1 suma de todas las notas
+// suma de todas las notas
 const totalScore = exams.reduce((acc, exam) => acc + exam.score, 0);
 console.log(totalScore);
 
-// 6.2 suma de las notas de los aprobados
+// suma de las notas de los aprobados
 const passedScore = exams.reduce((acc, exam) => (exam.score >= 5 ? acc + exam.score : acc), 0);
 console.log(passedScore);
 
-// 6.3 media de todas las notas
+// media de todas las notas
 const averageScore = totalScore / exams.length;
 console.log(averageScore);

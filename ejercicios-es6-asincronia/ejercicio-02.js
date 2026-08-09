@@ -1,18 +1,18 @@
-// 2.1 copia de un array con spread
+// copia de un array con spread
 {
   const pointsList = [32, 54, 21, 64, 75, 43];
   const pointsListCopy = [...pointsList];
   console.log(pointsListCopy);
 }
 
-// 2.2 copia de un objeto con spread
+// copia de un objeto con spread
 {
   const toy = { name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor' };
   const toyCopy = { ...toy };
   console.log(toyCopy);
 }
 
-// 2.3 juntar dos arrays con spread
+// juntar dos arrays con spread
 {
   const pointsList = [32, 54, 21, 64, 75, 43];
   const pointsList2 = [54, 87, 99, 65, 32];
@@ -20,7 +20,7 @@
   console.log(allPoints);
 }
 
-// 2.4 fusionar dos objetos con spread
+// fusionar dos objetos con spread
 {
   const toy = { name: 'Bus laiyiar', date: '20-30-1995', color: 'multicolor' };
   const toyUpdate = { lights: 'rgb', power: ['Volar like a dragon', 'MoonWalk'] };
@@ -28,7 +28,7 @@
   console.log(toyMerged);
 }
 
-// 2.5 copia del array sin la posición 2, sin tocar el original
+// copia del array sin la posición 2, sin tocar el original
 {
   const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
   const colorsWithoutThird = [...colors.slice(0, 2), ...colors.slice(3)];

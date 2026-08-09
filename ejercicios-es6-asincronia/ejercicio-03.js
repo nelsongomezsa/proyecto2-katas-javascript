@@ -1,4 +1,4 @@
-// 3.1 lista de nombres con map
+// lista de nombres con map
 {
   const users = [
     { id: 1, name: 'Abel' },
@@ -10,7 +10,7 @@
   console.log(names);
 }
 
-// 3.2 lista de nombres cambiando los que empiezan por A a Anacleto
+// lista de nombres cambiando los que empiezan por a a anacleto
 {
   const users = [
     { id: 1, name: 'Abel' },
@@ -22,7 +22,7 @@
   console.log(names);
 }
 
-// 3.3 lista de nombres de ciudades añadiendo (Visitado) si isVisited es true
+// lista de nombres de ciudades marcando las visitadas
 {
   const cities = [
     { isVisited: true, name: 'Tokyo' },
