@@ -2,3 +2,9 @@
 node_modules
 .idea/
 *.iml
+
+# Configuración local de herramientas: no se versiona
+.claude/
+CLAUDE.md
+.codex/
+AGENTS.md
